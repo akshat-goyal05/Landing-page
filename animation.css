@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  #parent {
+    height: 20%;
+    width: 100%;
+    background-color: plum;
+    white-space: nowrap;
+    overflow-y: hidden;
+  }
+  h1 {
+    font-size: 120px;
+    display: inline-block;
+    /* background-color: yellow; */
+    margin-right: 50px;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #parent::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @keyframes anime {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 54px));
+    }
+  } 

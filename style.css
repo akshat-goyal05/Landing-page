@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear;
+    
+}
+@keyframes move{
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+    50%{
+        left: 80%;
+        top: 0%;
+    }
+    100%{
+        left: 80%;
+        top: 50%;
+    }
+}
+/* @keyframes move{
+    from{
+        left: 0;
+        background-color: aqua;
+        rotate: 0deg;
+        background-image: url(https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        animation-fill-mode: forwards;
+      background-position: center;
+      background-size: cover; 
+        
+    }
+    to{
+       left: 70%; 
+       background-color:crimson;
+       rotate: 360deg;
+       background-image: url(https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+       background-size: cover;
+       background-position: center;
+    }
+    
+} */
